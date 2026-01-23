@@ -9096,3 +9096,9 @@ input[type=range]::-ms-thumb {
     max-width: 100%;        /* 親要素幅に合わせる */
     height: auto;           /* 縦横比を維持 */
   }
+  .materialboxedvideo
+  {
+    width: 100%;
+    max-width: 400px; /* ← 好きなサイズに調整 */
+    height: auto;
+  }
