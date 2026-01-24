@@ -25,7 +25,7 @@ window.onload = function () {
 
     // 経過年数を表示
     document.getElementById('syunen').textContent =
-        "今年でYUITO8-22のアカウント開設から、" + years + "周年となりました。これからもよろしくお願いします。";
+        "今年でYUITO8-22のアカウント開設から、" + (years+1) + "周年となりました。これからもよろしくお願いします。";
 
     // 11月14日だけカードを表示
     if (today.getMonth() === 10 && today.getDate() === 14) { // 11月は10
