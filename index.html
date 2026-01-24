@@ -52,6 +52,7 @@
           <div class="col s12 m6">
             <div class="card yellow darken-1">
               <div class="card-content white-text">
+                <i class="material-icons" style="color:black">warning</i>
                 <span class="card-title">警告</span>
                 <p style="color:black;">当サイトが正常に動作するには、JavaScriptを有効にする必要があります。</p>
               </div>
@@ -59,15 +60,30 @@
           </div>
         </div>
       </noscript>
+
+      <div class="row">
         <div class="col s12 m6">
-            <div class="card green darken-1">
-              <div class="card-content white-text">
-                <span class="card-title" id="year" style="color:white"></span>
-                <p style="color:white;" id="date"></p>
-              </div>
+          <div class="card green darken-1">
+            <div class="card-content white-text">
+              <i class="material-icons">today</i>
+              <span class="card-title" id="year" style="color:white"></span>
+              <p style="color:white;" id="date"></p>
             </div>
           </div>
         </div>
+
+        <div class="col s12 m6" id="thankyou">
+          <div class="card pink darken-1">
+            <div class="card-content white-text">
+              <i class="material-icons">celebration</i>
+              <span class="card-title" style="color:white;">ありがとうございます</span>
+              <p style="color:white;" id="syunen"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
       <!-- モーダル -->
       <div id="modal1" class="modal">
         <div class="modal-content">
