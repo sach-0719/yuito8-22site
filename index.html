@@ -30,6 +30,7 @@
     <li><a href="news.html"><i class="material-icons">list</i>スタジオ一覧</a></li>
     <li><a href="guide.html"><i class="material-icons">check</i>ガイドライン</a></li>
     <li><a href="video.html"><i class="material-icons">movie</i>動画集</a></li>
+    <li><a href="ikenaikoto.html"><i class="material-icons">block</i>してはいけないこと</a></li>
     <li><a href="qrcode.html"><i class="material-icons">smartphone</i>QRコードを表示</a></li>
     <li><a href="https://scratch.mit.edu/users/YUITO8-22/"><i class="material-icons">account_circle</i>YUITO8-22 on Scratch</a></li>
     <li><a href="https://note.com/sach0719"><i class="material-icons">edit</i>Note</a>
@@ -45,7 +46,7 @@
       <div class="row center">
         <h5 class="header col s12 light">2021年から活動しています。</h5>
       </div>
-
+      
       <noscript>
         <div class="row">
           <div class="col s12 m6">
@@ -58,7 +59,15 @@
           </div>
         </div>
       </noscript>
-
+        <div class="col s12 m6">
+            <div class="card green darken-1">
+              <div class="card-content white-text">
+                <span class="card-title" id="year" style="color:white"></span>
+                <p style="color:white;" id="date"></p>
+              </div>
+            </div>
+          </div>
+        </div>
       <!-- モーダル -->
       <div id="modal1" class="modal">
         <div class="modal-content">
@@ -77,6 +86,7 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/date.js"></script>
 
   <script>
     $(document).ready(function(){
