@@ -64,6 +64,7 @@
         <div class="card">
           <div class="card-image">
             <video
+              id="playervideo"
               class="responsive-video"
               src="videos/転売ヤーざまあwww.mp4"
               controls
@@ -91,6 +92,7 @@
         <div class="card">
           <div class="card-image">
             <video
+              id="playervideo"
               class="responsive-video"
               src="videos/フォロワー10人記念のとき.mp4"
               controls
@@ -106,6 +108,7 @@
         <div class="card">
           <div class="card-image">
             <video
+              id="playervideo"
               class="responsive-video"
               src="videos/マイクラ中毒者になるとどうなるのか.mp4"
               controls
@@ -124,7 +127,7 @@
       </div>
 
             <h4>【アニメ】マイクラ中毒者になるとどうなるのか</h4>
-            <p>これはフォロワー10人記念で作ったプロジェクトです。<br>当時は初心者だったため、今見ると必死さが伝わってきます。</p>
+            <p>みねくらふとたのちぃ( ᐛ )<br></p>
       </div>
       
 
@@ -151,13 +154,17 @@
   <script src="js/menu.js"></script>
 
   <script>
-    $(document).ready(function(){
-      // サイドナビ初期化
-      $('.sidenav').sidenav();
-      // モーダル初期化
-      $('.modal').modal();
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.modal').modal();
+
+    // 右クリック禁止
+    document.querySelectorAll('video').forEach(video => {
+      video.addEventListener('contextmenu', e => e.preventDefault());
     });
+  });
   </script>
+
 
 </body>
 </html>
