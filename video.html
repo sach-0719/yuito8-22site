@@ -24,12 +24,19 @@
 
   <!-- サイドナビ -->
   <ul id="nav-mobile" class="sidenav">
-    <li><h3 style="color:#6f6f6f;">YUITO8-22</h3></li>
+    <li><div class="user-view">
+      <div class="background">
+        <img src="menuimage.jpg">
+      </div>
+      <a href="#user"><img class="circle" src="favicon.ico"> </a>
+      <h5><span class="white-text"></span>YUITO8-22</span></h5>
+      <a href="#email"><span class="white-text email"></span></a>
+    </div></li>
     <li><a href="index.html"><i class="material-icons">home</i>ホーム</a></li>
     <li><a href="info.html"><i class="material-icons">help</i>ご利用について</a></li>
     <li><a href="news.html"><i class="material-icons">list</i>スタジオ一覧</a></li>
     <li><a href="guide.html"><i class="material-icons">check</i>ガイドライン</a></li>
-    <li><a href="video.html"><i class="material-icons">movie</i>動画集</a></li>
+    <li><a href="video.html"><i class="material-icons">hub</i>コンテンツ集 /Contents</a></li>
     <li><a href="ikenaikoto.html"><i class="material-icons">block</i>してはいけないこと</a></li>
     <li><a href="qrcode.html"><i class="material-icons">smartphone</i>QRコードを表示</a></li>
     <li><a href="https://scratch.mit.edu/users/YUITO8-22/"><i class="material-icons">account_circle</i>YUITO8-22 on Scratch</a></li>
@@ -41,8 +48,8 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <i class="material-icons center purple-text" style="font-size: 100px; display: block; margin-bottom: 9px;">movie</i>
-      <h1 class="header center orange-text">動画集</h1>
+      <i class="material-icons center light-green-text" style="font-size: 100px; display: block; margin-bottom: 9px;">hub</i>
+      <h1 class="header center orange-text">コンテンツ集</h1>
       <div class="row center">
       </div>
             <div class="row center">
@@ -104,7 +111,7 @@
             <h4>フォロワー10人記念</h4>
             <p>これはフォロワー10人記念で作ったプロジェクトです。<br>当時は初心者だったため、今見ると必死さが伝わってきます。</p>
       </div>
-                  <div class="col s12 m7">
+        <div class="col s12 m7">
         <div class="card">
           <div class="card-image">
             <video
@@ -127,8 +134,41 @@
       </div>
 
             <h4>【アニメ】マイクラ中毒者になるとどうなるのか</h4>
-            <p>みねくらふとたのちぃ( ᐛ )<br></p>
+            <p>みねくらふとたのちぃ( ᐛ )</p>
       </div>
+
+        <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image ">
+            <img src="Battery Game.jpg" alt="">
+          </div>
+
+      <h4>Battery Game</h4>
+      <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width tab-demo ">
+        <li class="tab col s3"><a href="#test1">Japanese / 日本語</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">English / 英語</a></li>
+      </ul>
+
+      <div id="test1" class="col s12">
+        <p>このゲームはダウンロードして遊べます。Unityroomでは配信していませんのでご注意ください。<br>充電ケーブルを接続するとプレイヤーが上に行き、外すとプレイヤーが下に行きます。<br>ゲーム内の言語は英語です。ご注意ください。</b></p>
+      </div>
+      <div id="test2" class="col s12 ">
+        <p>This game can be downloaded and played. Please note that it is not distributed on Unityroom. <br>When the charging cable is connected, the player will move up, and when it is disconnected, the player will move down.</b></p>
+      </div>
+      
+      <div class="card-content">
+        <a class="waves-effect waves-light btn light-blue" href="files/batterygamewin.zip" download="BatteryGame_win.zip" >
+          <i class="material-icons left">window</i>Download(Windows)(.zip)
+        </a>
+        <a class="waves-effect waves-light btn black" href="files/batterygamemac.zip" download="BatteryGame_mac.zip">
+          <i class="material-icons left">apple</i>Download(Mac)(.zip)
+        </a>
+        <a class="waves-effect waves-light btn orange disabled">
+          <i class="material-icons left">install_desktop</i>Download(Linux)(Coming soon)
+        </a>
+      </div>
+
+    </div>
       
 
       <div id="modal1" class="modal">
@@ -163,6 +203,24 @@
       video.addEventListener('contextmenu', e => e.preventDefault());
     });
   });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.tabs').tabs();
+  });
+
+
+
+  /* jQuery Method Calls
+    You can still use the old jQuery plugin method calls.
+    But you won't be able to access instance properties.
+
+    $('.tabs').tabs('methodName');
+    $('.tabs').tabs('methodName', paramName);
+  */
+  
+
   </script>
 
 
