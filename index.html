@@ -12,26 +12,34 @@
   <link href="css/materialize.css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" rel="stylesheet" media="screen,projection"/>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <!-- ナビゲーションバー -->
+  <aside>
   <nav class="light-blue lighten-1">
-    <div class="nav-wrapper container">
+    <div class="nav-wrapper container" data-nosnippet>
       <a href="#" class="brand-logo">YUITO8-22</a>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>    </div>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
   </nav>
-
   <!-- サイドナビ -->
-  <ul id="nav-mobile" class="sidenav">
+  <ul id="nav-mobile" class="sidenav" data-nosnippet>
       <li><div class="user-view">
         <div class="background">
-        <img src="menuimage.jpg">
+        <img src="menuimage (300 x 186 px).png">
       </div>
-      <a href="#user"><img class="circle" src="favicon.ico"> </a>
-      <h5><span class="white-text"></span>YUITO8-22</span></h5>
+      <a href="#user" class="white-text"><img class="circle" src="favicon.ico"> </a>
+      <h5><span class="white-text">YUITO8-22</span></h5>
       <a href="#email"><span class="white-text email"></span></a>
     </div></li>
+    <script async src="https://cse.google.com/cse.js?cx=d423bc51148ec4c4b">
+    </script>
+    <div class="gcse-searchbox-only"></div>
     <li><a href="index.html"><i class="material-icons">home</i>ホーム</a></li>
     <li><a href="info.html"><i class="material-icons">help</i>ご利用について</a></li>
     <li><a href="news.html"><i class="material-icons">list</i>スタジオ一覧</a></li>
@@ -44,18 +52,21 @@
     <li><a href="https://unityroom.com/users/xo1gnql0hd4y9c8sf6uz"><i class="material-icons">meeting_room</i>UnityRoom</a></li>
   </li>
   </ul>
+  </aside>
 
   <!-- メインコンテンツ -->
+  <body id="top"></body>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <i class="material-icons center cyan-text" style="font-size: 100px; display: block; margin-bottom: 9px;">home</i>
+      <i class="material-icons center cyan-text" style="font-size: 100px; display: block; margin-bottom: 9px;" data-nosnippet>home</i>
       <h1 class="header center orange-text">YUITO8-22</h1>
       <div class="row center">
         <h5 class="header col s12 light">2021年から活動しています。</h5>
       </div>
       
       <noscript>
+        <aside>
         <div class="row">
           <div class="col s12 m6">
             <div class="card yellow darken-1">
@@ -67,6 +78,7 @@
             </div>
           </div>
         </div>
+        </aside>
       </noscript>
 
       <div class="row">
@@ -80,6 +92,7 @@
           </div>
         </div>
 
+
         <div class="col s12 m6" id="thankyou" style="display: none;">
           <div class="card pink darken-1">
             <div class="card-content white-text">
@@ -91,14 +104,54 @@
         </div>
       </div>
 
-        
+    <ul class="collapsible">
+      <li>
+        <div class="collapsible-header"><i class="material-icons black-text">arrow_downward</i><a href="#quickmenu" class="black-text">下へ</a></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons cyan-text">home</i>ホーム</div>
+        <div class="collapsible-body"><span>このページです</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons orange-text">help</i><a href="info.html" class="black-text">ご利用について</a></div>
+        <div class="collapsible-body"><span>このサイトについて書かれています。</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header" id="quickmenu"><i class="material-icons orange-text">list</i><a href="news.html" class="black-text">スタジオ一覧</a></div>
+        <div class="collapsible-body"><span>私が所有しているスタジオを掲載しています。</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons green-text">check</i><a href="guide.html" class="black-text">ガイドライン</a></div>
+        <div class="collapsible-body"><span>コメントやスタジオ招待する際に、必ずお読みください。</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons light-green-text">hub</i><a href="video.html" class="black-text">コンテンツ集 / Contents</a></div>
+        <div class="collapsible-body"><span>動画やソフトウェアなどが掲載されています。</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons red-text">block</i><a href="ikenaikoto.html" class="black-text">してはいけないこと</a></div>
+        <div class="collapsible-body"><span>Scratchにはいくつかしてはいけないことがあります。それをまとめました。</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons orange-text">account_circle</i><a href="https://scratch.mit.edu/users/YUITO8-22" class="black-text"></a>Scratch</div>
+        <div class="collapsible-body"><span>私のScratchのアカウントです。</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons black-text">arrow_upward</i><a href="#top" class="black-text">上へ</a></div>
+      </li>
+    </ul>
+         
+
+
+    </ul>
       <!-- モーダル -->
       <div id="modal1" class="modal">
         <div class="modal-content">
-          <h4>リンク一覧</h4>
+          <h4></h4>
           <p>クリックしてそのページに飛びます。</p>
             <li><a href="https://scratch.mit.edu/users/YUITO8-22/">Scratch</a></li>
             <li><a href="https://note.com/sach0719">Note</a></li>
+            
             
         </div>
       </div>

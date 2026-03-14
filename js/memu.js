@@ -16,6 +16,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  window.addEventListener('scroll', highlightTab);
-  highlightTab(); // 初期表示用
-});
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tap-target');
+    var instances = M.TapTarget.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.tap-target').tapTarget();
+  });
