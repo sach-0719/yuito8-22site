@@ -3,14 +3,13 @@
 
   <url>
     <loc>https://sach-0719.github.io/yuito8-22site/</loc>
-  </url>
-
-  <url>
-    <loc>https://sach-0719.github.io/yuito8-22site/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://sach-0719.github.io/yuito8-22site/search.html</loc>
+    <changefreq>monthly</changefreq>
   </url>
 
   <url>
@@ -32,8 +31,9 @@
   <url>
     <loc>https://sach-0719.github.io/yuito8-22site/ikenaikoto.html</loc>
   </url>
-    <url>
-        <loc>https://sach-0719.github.io/yuito8-22site/qrcode.html</loc>
-    </url>
+
+  <url>
+    <loc>https://sach-0719.github.io/yuito8-22site/qrcode.html</loc>
+  </url>
 
 </urlset>
