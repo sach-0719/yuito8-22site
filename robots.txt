@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sach-0719.github.io/yuito8-22site/sitemap.xml
