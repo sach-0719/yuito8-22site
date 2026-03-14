@@ -9107,4 +9107,8 @@ input[type=range]::-ms-thumb {
   {
     background-color:#3A026E
   }
-  
+  .gcse-searchresults-only
+  {
+  margin: 0 auto;
+  max-width: 900px;
+  }
