@@ -1,8 +1,30 @@
+
 /*!
  * Materialize v1.0.0-rc.1 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+ /* navタグ全体の背景を透過させてぼかす */
+nav.header {
+  position: fixed; /* ヘッダーを上部に固定 */
+  top: 0;
+  left: 0;
+  z-index: 999;
+  
+  /* Materializeの白背景を上書きして半透明にする */
+  background-color: rgba(255, 255, 255, 0.5) !important; 
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1); /* 好みで薄い影をつける */
+  
+  /* ぼかしエフェクト */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Materialize固有の背景色の影響を完全に消す */
+nav.header .nav-wrapper {
+  background-color: transparent !important;
+}
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -4286,6 +4308,7 @@ nav {
 nav.nav-extended {
   height: auto;
 }
+
 
 nav.nav-extended .nav-wrapper {
   min-height: 56px;
